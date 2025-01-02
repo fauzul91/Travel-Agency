@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #2986FE;
+    --accent-1: #D5D8DD;
+    --accent-2: #121212; 
+    --hover-1: #3e3e3e;
+    --hover-2: #186bd7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+@media(max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(52, 52, 52, 0.1);
+    padding: 15px 0 15px 0;
+}
+
+/* Navbar Start */
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .logo {
+    display: flex;
+    font-size: 0.75rem;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar-box .logo i{
+    font-size: 2rem;
+}
+
+.navbar-box h1{
+    font-size: 1.25rem;
+}
+
+.navbar-box .menu {
+    display: flex;
+    gap: 45px;
+    font-size: 0.8rem;
+}
+
+.navbar-box .menu li {
+    list-style-type: none;
+}
+
+.navbar-box .menu li a{
+    text-decoration: none;
+    color: var(--accent-2);
+}
+
+.navbar-box .menu li a:hover{
+    color: var(--hover-1);
+}
+
+.navbar-box .book-trip {
+    padding: 0.75rem 2.5rem;
+    background-color: var(--accent-2);
+    color: var(--primary-color);
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+}
+
+.navbar-box .book-trip:hover {
+    background-color: #3e3e3e;
+}
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+    margin-top: 1rem;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-box {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    background: url("/dist/assets/Hero.png") no-repeat center center/cover;
+    border-radius: 5%;
+}
+
+.hero-box .text {
+    margin-left: 8rem;
+}
+
+.hero-box .text p:first-child {
+    font-size: 80%;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.hero-box .text h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-box .book-trip {
+    padding: 0.75rem 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+}
+
+.hero-box .book-trip:hover {
+    background-color: var(--hover-2) !important;
+}
+
+/* Hero End */
