@@ -115,7 +115,7 @@
     display: flex;
     align-items: center;
     padding: 2rem 0;
-    background: url("../assets/images/Hero.png") no-repeat center center/cover;
+    background: url("../dist/assets/images/Hero.png") no-repeat center center/cover;
     border-radius: 5%;
 }
 
@@ -279,7 +279,7 @@
 
 .card {
     background: #ffffff;
-    border-radius: 8px;
+    border-radius: 1.25rem;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
@@ -288,7 +288,7 @@
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 5%;
+    border-radius: 1.25rem;
 }
 
 .card:hover {
@@ -303,6 +303,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .howitworks-box .header {
@@ -334,14 +335,14 @@
 
 .step {
     flex: 1;
-    background: #ffffff;
-    border-radius: 20px;
+    background-image: linear-gradient(120deg, #f2f0f0, #ffffff);
+    border-radius: 1.25rem;
     text-align: left;
     padding: 3rem;
     max-width: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 7.5rem;
+    margin-top: 7rem;
 }
 
 .step .icon {
@@ -350,17 +351,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
+    background-image: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3.2rem;
+}
+
+.ri-map-pin-fill, .ri-coupon-fill, .ri-money-dollar-circle-fill{
+    scale: 1.5;
+}
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .step.active {
-    background: var(--secondary-color);
+    background-image: linear-gradient(120deg, #035dd4, #2986FE);
     color: var(--primary-color);
-    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 85, 255, 0.3);
     margin-top: 0;
 }
@@ -388,5 +397,11 @@
 
 .step.active a:hover {
     color: var(--accent-1);
+}
+
+.step.active:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 /* How It Works End */
