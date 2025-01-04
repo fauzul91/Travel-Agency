@@ -24,12 +24,6 @@
     margin-inline: auto;
 }
 
-@media(max-width: 992px) {
-    .container {
-        width: 90%;
-    }
-}
-
 .navbar {
     position: absolute;
     top: 0;
@@ -94,6 +88,75 @@
 .navbar-box .book-trip:hover {
     background-color: #3e3e3e;
 }
+
+.navbar-box .ri-menu-3-line {
+    display: none;
+}
+
+@media(max-width: 850px) {
+    .navbar-box .logo i{
+        font-size: 1.8rem;
+    }
+    
+    .navbar-box h1{
+        font-size: 1.25rem;
+    }
+    
+    .navbar-box .menu {
+        display: flex;
+        gap: 45px;
+        font-size: 0.75rem;
+    }
+
+    .navbar-box .book-trip {
+        scale: 0.925;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border-radius: 1.5rem;
+    }
+}
+
+@media(max-width: 776px) {
+    .navbar-box .ri-menu-3-line {
+        display: block;
+        scale: 1.5;
+        font-weight: bold;
+    }
+    
+    .navbar-box .book-trip {
+        display: none;
+    }
+
+    .navbar-box .menu {
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%);
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--primary-color);
+        width: 100%;
+        padding: 0 0 40px 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+    }
+
+    .navbar-box .menu.menu-active {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar-box .logo {
+        scale: 0.85;
+    }
+
+    .navbar-box .ri-menu-3-line {
+        scale: 1.35;
+    }
+}
+
 /* Navbar End */
 
 /* Hero Start */
@@ -126,6 +189,7 @@
     height: 100%;
     object-fit: cover;  
     z-index: -1;  
+    border-radius: 1.25rem;
 }
 
 .hero-box .text {
