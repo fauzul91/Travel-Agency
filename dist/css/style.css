@@ -650,39 +650,46 @@
     text-align: center;
 }
 
-.howitworks-box .header h2{
+.howitworks-box .header h2 {
     font-size: 2rem;
     margin-bottom: 0.3rem;
 }
 
-.howitworks-box .header p{
+.howitworks-box .header p {
     font-size: 0.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.5rem;
 }
 
-.steps{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 1rem;
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.step {
+    background-image: linear-gradient(120deg, #fbfbfb, #ffffff);
+    border-radius: 1.25rem;
+    padding: 3rem;
+    max-width: 20rem; 
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; 
 }
 
 .steps h3 {
     font-weight: 700;
 }
 
-.step {
-    flex: 1;
-    background-image: linear-gradient(120deg, #f2f0f0, #ffffff);
-    border-radius: 1.25rem;
-    text-align: left;
-    padding: 3rem;
-    max-width: 20rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 7rem;
+.step:nth-child(2) {
+    background-image: linear-gradient(120deg, #035dd4, #2986FE);
+    color: var(--primary-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.3);
 }
 
 .step .icon {
@@ -691,57 +698,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: #f9f9f9;
+    background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
     margin-top: 2rem;
     margin-bottom: 3.2rem;
 }
 
-.ri-map-pin-fill, .ri-coupon-fill, .ri-money-dollar-circle-fill{
+.step:nth-child(2) .icon {
+    color: var(--secondary-color);
+}
+
+.ri-map-pin-fill, .ri-coupon-fill, .ri-money-dollar-circle-fill {
     scale: 1.5;
 }
+
 .step:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.step.active {
-    background-image: linear-gradient(120deg, #035dd4, #2986FE);
-    color: var(--primary-color);
-    box-shadow: 0 8px 16px rgba(0, 85, 255, 0.3);
-    margin-top: 0;
+@media (max-width: 992px) {
+    .steps {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .step {
+        max-width: 18rem; 
+        margin: 0 auto;
+        padding: 2.5rem;
+        height: auto;
+    }
 }
 
-.step.active .icon {
-    margin-bottom: 3rem;
-    background-color: var(--secondary-color);
-    outline: solid 1px var(--primary-color);
+@media screen and (max-width: 768px) {
+    .steps {
+        grid-template-columns: 1fr; 
+    }
+
+    .step {
+        max-width: 20rem; 
+        padding: 2.5rem; 
+        height: auto;
+    }
+
+    .step .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    .howitworks-box .header p {
+        font-size: 0.75rem;
+    }
 }
 
-.step.active h3 {
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-}
+@media screen and (max-width: 480px) {
+    .step {
+        max-width: 18rem; 
+        padding: 2rem; 
+        height: auto;
+    }
 
-.step.active p {
-    font-size: 0.75rem;
-    margin-bottom: 1.5rem;
-}
+    .step .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 1.2rem;
+    }
 
-.step.active a {
-    text-decoration: none;
-    color: var(--primary-color);
+    .howitworks-box .header p {
+        font-size: 0.65rem;
+        line-height: 1.2rem;
+    }
 }
-
-.step.active a:hover {
-    color: var(--accent-1);
-}
-
-.step.active:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-/* How It Works End */
+/* How it works End */
