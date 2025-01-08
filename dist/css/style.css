@@ -834,9 +834,15 @@
 .stats-section {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 5rem;
 }
 
+.stat-item {
+    padding: 5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5%;
+}
 .stat-item h2 {
     font-size: 2rem;
     margin-bottom: 5px;
