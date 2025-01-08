@@ -834,18 +834,18 @@
 .stats-section {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .stat-item {
     padding: 5rem;
-    background-color: var(--primary-color);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5%;
+    background-color: #f9f9f6;
+    border-radius: 15%;
 }
 .stat-item h2 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--secondary-color);
 }
 
 .stat-item p {
