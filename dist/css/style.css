@@ -669,7 +669,7 @@
 .steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 2rem;
+    gap: 0rem;
     justify-content: center; 
     align-items: center; 
     margin: 0 auto; 
@@ -786,7 +786,11 @@
     font-weight: 500;
     -webkit-text-stroke: 0.75px black; 
     text-align: center;
-    margin-bottom: 2rem;
+}
+
+.sub-title {
+    margin-bottom: 3rem;
+    text-align: center;
 }
 .about-box {
     margin-bottom: 40px;
@@ -795,40 +799,43 @@
 
 .promo-section {
     position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
 }
 
 .promo-section .promo-image img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 10%;
+    height: 25rem;
 }
 
 .promo-details {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
 }
 
-.headline-section h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.headline-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.promo-details img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 15rem;
+    height: auto;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    width: 85%;
+    padding: 2rem ;
     color: #fff;
-    background-color: #007bff;
+    background-color: var(--secondary-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-2);
 }
 
 .stats-section {
@@ -838,9 +845,9 @@
 }
 
 .stat-item {
-    padding: 5rem;
-    background-color: #f9f9f6;
-    border-radius: 15%;
+    padding: 4.5rem;
+    background-color: #f8f8f8;
+    border-radius: 20%;
 }
 .stat-item h2 {
     font-size: 5rem;
