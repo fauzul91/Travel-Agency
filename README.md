@@ -6,7 +6,7 @@ Tourist is a modern and responsive travel agency website designed to promote tra
 
 - **Navbar**: A responsive navigation bar with links to different sections (About, Tour, Package, Contact).
 - **Hero Section**: A visually appealing hero section that promotes travel with an eye-catching background and bold typography.
-- **Book a Trip Button**: A prominent button encouraging users to book a trip.
+- **About Section**: A visually appealing hero section that promotes travel with an eye-catching background and bold.
 - **Responsive Design**: The website adjusts to different screen sizes for an optimal user experience on both mobile and desktop devices.
 - **And other features** (Coming Soon)
 
