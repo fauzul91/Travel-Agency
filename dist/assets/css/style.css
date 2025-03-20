@@ -13,12 +13,12 @@
 @import url("components/cards.css");
 
 /* Import dari folder pages */
-@import url("pages/hero.css");
-@import url("pages/about-us.css");
-@import url("pages/achievement.css");
-@import url("pages/how-it-works.css");
-@import url("pages/popular-destination.css");
-@import url("pages/sponsor.css");
+@import url("pages/home/hero.css");
+@import url("pages/home/about-us.css");
+@import url("pages/home/achievement.css");
+@import url("pages/home/how-it-works.css");
+@import url("pages/home/popular-destination.css");
+@import url("pages/home/sponsor.css");
 
 /* Import dari utils pages */
 @import url("utils/responsive.css");
