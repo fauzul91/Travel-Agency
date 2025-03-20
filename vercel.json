@@ -1,9 +1,3 @@
 {
-    "rewrites": [
-      { "source": "/home", "destination": "/index.html" },
-      { "source": "/contact", "destination": "/dist/pages/contact.html" },
-      { "source": "/package", "destination": "/dist/pages/package.html" },
-      { "source": "/tour", "destination": "/dist/pages/tour.html" }
-    ]
+    "cleanUrls": true
 }
-  
