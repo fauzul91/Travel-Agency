@@ -1,0 +1,46 @@
+/* About Us Start */
+.title {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    -webkit-text-stroke: 0.75px black; 
+    text-align: center;
+}
+
+.sub-title {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.35rem;
+}
+.about-box {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.promo-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.promo-section .promo-image img {
+    max-width: 100%;
+    border-radius: 10%;
+    height: 25rem;
+}
+
+.promo-details {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-details img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 15rem;
+    height: auto;
+}
+/* About Me End */

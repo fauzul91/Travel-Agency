@@ -1,0 +1,144 @@
+/* Popular Destination */
+.popular-destination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-destination-box {
+    display: grid;
+    text-align: center;
+}
+
+.popular-destination-box h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    -webkit-text-stroke: 0.75px black; 
+}
+
+.popular-destination-box p {
+    font-size: 0.75rem;
+}
+
+.destination-carousel {
+    position: relative;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+@media(max-width: 992px){
+    .destination-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .popular-destination-box {
+        justify-content: center;
+    }
+    .destination-cards {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 1rem; 
+        margin-top: 1rem;
+    }
+
+    .card {
+        padding: 0.75rem; 
+        font-size: 0.9rem;
+        width: 100%; 
+        max-width: 350px; 
+        box-sizing: border-box; 
+    }
+
+    .card img {
+        height: auto; 
+        border-radius: 0.75rem;
+        object-fit: cover; 
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card p,
+    .card .rating {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media(max-width:576px){
+    .popular-destination-box {
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; /* Tambahan: agar konten benar-benar vertikal */
+    }
+
+    .destination-cards {
+        justify-content: center; 
+        align-items: center; 
+        gap: 1rem; 
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .card {
+        height: auto; 
+        border-radius: 0.75rem;
+        padding: 0.75rem; 
+        width: 100%; 
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    .card img {
+        width: 100%; 
+        border-radius: 0.75rem;
+        object-fit: cover; 
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card p,
+    .card .rating {
+        font-size: 0.8rem;
+    }
+}
+/* Popular Destination End */

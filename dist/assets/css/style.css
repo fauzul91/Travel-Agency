@@ -1,0 +1,24 @@
+/* Import dari folder base */
+@import url("base/reset.css");
+@import url("base/typography.css");
+@import url("base/variables.css");
+
+/* Import dari folder layout */
+@import url("layout/navbar.css");
+@import url("layout/footer.css");
+@import url("layout/grid.css");
+
+/* Import dari folder components */
+@import url("components/buttons.css");
+@import url("components/cards.css");
+
+/* Import dari folder pages */
+@import url("pages/hero.css");
+@import url("pages/about-us.css");
+@import url("pages/achievement.css");
+@import url("pages/how-it-works.css");
+@import url("pages/popular-destination.css");
+@import url("pages/sponsor.css");
+
+/* Import dari utils pages */
+@import url("utils/responsive.css");

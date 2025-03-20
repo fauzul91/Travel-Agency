@@ -1,0 +1,179 @@
+/* Hero Start */
+.hero {
+    margin-top: 8rem;
+    position: relative;
+    min-height: 75vh; /* Menentukan tinggi minimum */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-box {
+    position: relative;
+    width: 100%;
+    min-height: 75vh; /* Pastikan konsistensi tinggi */
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border-radius: 5%;
+    margin-bottom: 4rem;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tetap memenuhi container */
+    z-index: -1;
+    border-radius: 2rem;
+    aspect-ratio: 16 / 9; /* Pastikan gambar tetap proporsional */
+}
+
+.hero-box .text {
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.hero-box .text p:first-child {
+    font-size: 80%;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.hero-box .text h1 {
+    font-size: 2.75rem;
+    letter-spacing: 1px;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    -webkit-text-stroke: 1px black; 
+}
+
+.hero-box .book-trip {
+    padding: 0.75rem 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+}
+
+.hero-box .book-trip:hover {
+    background-color: var(--hover-2) !important;
+}
+
+@media (max-width: 1080px) {
+    .hero-box {
+        min-height: 65vh; /* Sesuaikan tinggi untuk layar medium */
+    }
+    .hero-box .text {
+        margin-left: 4rem;
+        scale: 0.85;
+    }
+}
+
+@media (max-width: 970px) {
+    .hero-box {
+        margin-bottom: 3rem;
+        min-height: 60vh;
+    }
+
+    .hero-box .text {
+        margin-left: 2rem;
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero-box {
+        margin-bottom: 1rem;
+        min-height: 55vh;
+    }
+    
+    .hero-box .text {
+        margin-left: 2rem;
+        scale: 0.75;
+    }
+}
+
+@media (max-width: 776px) {
+    .hero {
+        margin-bottom: 0;
+        margin-top: 5rem;
+        align-items: flex-start;
+    }
+
+    .hero-box {
+        min-height: 80vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-box .text {
+        margin-left: 0;
+        text-align: left;
+        padding: 0;
+        width: 100%;
+        scale: 1;
+    }
+
+    .hero-box .text h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-box .book-trip {
+        margin-bottom: 3rem;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: auto; /* Biarkan gambar menyesuaikan tinggi */
+        border-radius: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-box .text p:nth-child(1) {
+        font-size: 0.65rem;
+    }
+
+    .hero-box .text h1 {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-box {
+        min-height: 55vh;
+    }
+
+    .hero-box .text p:nth-child(1) {
+        font-size: 0.6rem;
+    }
+
+    .hero-box .text h1 {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-box .book-trip {
+        padding: 0.7rem 2.25rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-image {
+        border-radius: 1rem;
+    }
+}
+
+/* Hero Section End */

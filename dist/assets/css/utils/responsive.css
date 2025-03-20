@@ -1,0 +1,167 @@
+
+/* Responsive Additional */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}   
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .promo-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .promo-section .promo-image img {
+        height: 20rem;
+    }
+
+    .stats-section {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .stat-item {
+        padding: 4rem;
+    }
+
+    .stat-item h2 {
+        font-size: 4rem;
+    }
+
+    .testimonials-section {
+        gap: 15px;
+    }
+
+    .testimonials-item {
+        max-width: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .promo-section .promo-image img {
+        height: 18rem;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        padding: 3rem;
+        width: 80%;
+    }
+
+    .testimonials-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .promo-section .promo-image img {
+        height: 15rem;
+    }
+
+    .promo-details img {
+        max-height: 12rem;
+    }
+
+    .stat-item {
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .stat-item h2 {
+        font-size: 3rem;
+    }
+
+    .stat-item p {
+        font-size: 0.9rem;
+    }
+
+    .testimonials {
+        margin-top: 3rem;
+    }
+
+    .testimonials-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials-item {
+        padding: 1.5rem;
+    }
+
+    .star i {
+        font-size: 1rem;
+    }
+
+    .reviewer img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .stat-item {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .stat-item h2 {
+        font-size: 2.5rem;
+    }
+
+    .testimonials-item {
+        padding: 1rem;
+    }
+
+    .testimonials-item p {
+        font-size: 0.8rem;
+    }
+
+    .reviewer-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .reviewer-info p {
+        font-size: 0.7rem;
+    }
+}

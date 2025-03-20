@@ -1,0 +1,141 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(52, 52, 52, 0.1);
+    padding: 15px 0 15px 0;
+    background-color: var(--primary-color);
+}
+
+/* Navbar Start */
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .logo {
+    display: flex;
+    font-size: 0.75rem;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar-box .logo i{
+    font-size: 2rem;
+}
+
+.navbar-box h1{
+    font-size: 1.25rem;
+}
+
+.navbar-box .menu {
+    display: flex;
+    gap: 45px;
+    font-size: 0.8rem;
+}
+
+.navbar-box .menu li {
+    list-style-type: none;
+}
+
+.navbar-box .menu li a{
+    text-decoration: none;
+    color: var(--accent-2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.navbar-box .menu li a:hover{
+    border-bottom: 2px solid var(--accent-2);
+}
+
+.navbar-box .book-trip {
+    padding: 0.75rem 2.5rem;
+    background-color: var(--accent-2);
+    color: var(--primary-color);
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+}
+
+.navbar-box .book-trip:hover {
+    background-color: #3e3e3e;
+}
+
+.navbar-box .ri-menu-3-line {
+    display: none;
+}
+
+@media(max-width: 850px) {
+    .navbar-box .logo i{
+        font-size: 1.8rem;
+    }
+    
+    .navbar-box h1{
+        font-size: 1.25rem;
+    }
+    
+    .navbar-box .menu {
+        display: flex;
+        gap: 45px;
+        font-size: 0.75rem;
+    }
+
+    .navbar-box .book-trip {
+        scale: 0.925;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border-radius: 1.5rem;
+    }
+}
+
+@media(max-width: 776px) {
+    .navbar-box .ri-menu-3-line {
+        display: block;
+        scale: 1.5;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .navbar-box .ri-menu-3-line:hover {
+        color: var(--hover-1);
+    }
+    
+    .navbar-box .book-trip {
+        display: none;
+    }
+
+    .navbar-box .menu {
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%);
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--primary-color);
+        width: 100%;
+        padding: 0 0 40px 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+    }
+
+    .navbar-box .menu.menu-active {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar-box .logo {
+        scale: 0.85;
+    }
+
+    .navbar-box .ri-menu-3-line {
+        scale: 1.35;
+    }
+}
+
+/* Navbar End */
