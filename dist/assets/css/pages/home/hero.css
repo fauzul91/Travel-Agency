@@ -30,11 +30,13 @@
     z-index: -1;
     border-radius: 2rem;
     aspect-ratio: 16 / 9;
+    filter: brightness(50%); 
 }
 
 .hero-box .text {
     align-items: center;
     margin-left: 8rem;
+    color: var(--primary-color);
 }
 
 .hero-box .text p:first-child {
@@ -49,13 +51,13 @@
     line-height: 3.5rem;
     margin-bottom: 1.5rem;
     font-weight: 500;
-    -webkit-text-stroke: 1px black; 
+    -webkit-text-stroke: 1px white; 
 }
 
 .hero-box .book-trip {
     padding: 0.75rem 2.5rem;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-2);
     display: inline-block;
     font-size: 0.8rem;
     font-weight: 500;

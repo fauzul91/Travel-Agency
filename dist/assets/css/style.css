@@ -19,6 +19,7 @@
 @import url("pages/home/how-it-works.css");
 @import url("pages/home/popular-destination.css");
 @import url("pages/home/sponsor.css");
+@import url("pages/tour/top-destination.css");
 
 /* Import dari utils pages */
 @import url("utils/responsive.css");
