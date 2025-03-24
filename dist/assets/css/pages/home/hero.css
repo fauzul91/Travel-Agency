@@ -74,8 +74,8 @@
     }
     .hero-box .text {
         margin-left: 4rem;
-        scale: 0.85;
-    }
+        scale: 0.85;        
+    }    
 }
 
 @media (max-width: 970px) {
@@ -88,6 +88,9 @@
         margin-left: 2rem;
         scale: 0.8;
     }
+    .text h1{
+        font-weight: bold;
+    } 
 }
 
 @media (max-width: 850px) {
@@ -99,7 +102,7 @@
     .hero-box .text {
         margin-left: 2rem;
         scale: 0.75;
-    }
+    }    
 }
 
 @media (max-width: 776px) {
@@ -121,16 +124,24 @@
         padding: 0;
         width: 100%;
         scale: 1;
+        color: black;
     }
 
     .hero-box .text h1 {
         font-size: 3rem;
         line-height: 4rem;
         margin-bottom: 2rem;
+        font-weight: bold;
     }
 
-    .hero-box .book-trip {
+    .hero-box .book-trip{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
         margin-bottom: 3rem;
+    }
+    .hero-box .book-trip:hover{
+        background-color: var(--hover-2) !important;
+        color: var(--primary-color) ;
     }
 
     .hero-image {
