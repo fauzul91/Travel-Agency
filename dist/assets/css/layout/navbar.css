@@ -61,6 +61,12 @@
     border-radius: 1.5rem;
 }
 
+.btn-book-trip{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 .navbar-box .book-trip:hover {
     background-color: #3e3e3e;
 }
