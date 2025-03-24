@@ -23,6 +23,7 @@
 @import url("pages/tour/enjoy-holiday.css");
 @import url("pages/contact/get-in-touch.css");
 @import url("pages/contact/map.css");
+@import url("pages/contact/faq.css");
 
 /* Import dari utils pages */
 @import url("utils/responsive.css");
