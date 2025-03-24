@@ -134,11 +134,12 @@
         font-weight: bold;
     }
 
-    .hero-box .book-trip{
+    .book-trip{
         background-color: var(--secondary-color);
         color: var(--primary-color);
         margin-bottom: 3rem;
     }
+
     .hero-box .book-trip:hover{
         background-color: var(--hover-2) !important;
         color: var(--primary-color) ;
